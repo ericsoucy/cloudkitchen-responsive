@@ -1,4 +1,10 @@
-# CloudkitchenResponsive
+# How to create responsive website in angular 12 | Angular tutorial
+
+Based on : <https://www.youtube.com/watch?v=YehZI9Hbtn8&list=WL&index=1&t=296s>
+
+
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
 
