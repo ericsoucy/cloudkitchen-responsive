@@ -4,7 +4,7 @@
     <a routerLink="menu">ORDER NOW <i class="bi bi-arrow-right"></i></a>
   </div>
 </div>
-<div class="container mt-5 mb-4">
+<div class="container mt-5 mb-5">
   <h1 class="text-center">
     How to get <span class="highlight">fresh food</span>
   </h1>
@@ -29,4 +29,18 @@
       </div>
   </div>
 </div>
-Photo by <a href="https://unsplash.com/@pablomerchanm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pablo Merchán Montes</a> on <a href="https://unsplash.com/s/photos/eating?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+<!--foodbox-->
+<div class="container mt-4 mb-4">
+  <h1 class="text-center">Customers <span class="highlight">Favourites Food</span></h1>
+  <div class="row">
+    <div class="col-lg-3 mt-3" *ngFor="let detail of foodData;index as i">
+      <div class="foodbox" *ngIf="i<=3">
+        <img src="{{detail.foodImg}}">
+        <h1>{{detail.foodName}}</h1>
+        <p>{{detail.foodPrice | currency: 'CAD'}}</p>
+      </div>
+    </div>
+  </div>
+  <a routerLink="menu" class="viewmorebtn">view more<i class="bi bi-arrow-right"></i></a>
+</div>
