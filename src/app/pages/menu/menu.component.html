@@ -1,1 +1,14 @@
-<p>menu works!</p>
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-lg-4" *ngFor="let detail of foodData">
+      <div class="foodbox mt-3 mb-3">
+        <img src="{{detail.foodImg}}">
+        <h1>{{detail.foodName}}</h1>
+        <p>{{detail.foodDetails}}</p>
+        <p>{{detail.foodPrice | currency: 'CAD'}}</p>
+        <br/>
+        <a class="buybtn">Buy Now &nbsp;<i class="bi bi-bag"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
