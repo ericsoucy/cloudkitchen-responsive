@@ -7,7 +7,7 @@
         <p>{{detail.foodDetails}}</p>
         <p>{{detail.foodPrice | currency: 'CAD'}}</p>
         <br/>
-        <a class="buybtn">Buy Now &nbsp;<i class="bi bi-bag"></i></a>
+        <a class="buybtn" [routerLink]="['/menu',detail.id]">Buy Now &nbsp;<i class="bi bi-bag"></i></a>
       </div>
     </div>
   </div>
